@@ -31,47 +31,9 @@ function show(){
     
     document.getElementById('main_game').style.visibility='visible';
     document.getElementById('man_che').style.visibility='hidden';
-    btn_background[0].style.backgroundColor = "red";
-    btn_background[1].style.backgroundColor = "red";
-    btn_background[2].style.backgroundColor = "red";
-    btn_background[5].style.backgroundColor = "red";
-    btn_background[9].style.backgroundColor = "red";
-    btn_background[10].style.backgroundColor = "red";
-    btn_background[12].style.backgroundColor = "red";
-    btn_background[14].style.backgroundColor = "red";
-    btn_background[15].style.backgroundColor = "red";
-    btn_background[17].style.backgroundColor = "red";
-    btn_background[18].style.backgroundColor = "red";
-    btn_background[19].style.backgroundColor = "red";
-    btn_background[20].style.backgroundColor = "red";
-    btn_background[21].style.backgroundColor = "red";
-    btn_background[23].style.backgroundColor = "red";
-    btn_background[24].style.backgroundColor = "red";
-    btn_background[26].style.backgroundColor = "red";
-    btn_background[28].style.backgroundColor = "red";
-    btn_background[31].style.backgroundColor = "red";
-    btn_background[32].style.backgroundColor = "red";
-    btn_background[33].style.backgroundColor = "red";
-    btn_background[36].style.backgroundColor = "red";
-    btn_background[37].style.backgroundColor = "red";
-    btn_background[38].style.backgroundColor = "red";
-    btn_background[42].style.backgroundColor = "red";
-    btn_background[45].style.backgroundColor = "red";
-    btn_background[47].style.backgroundColor = "red";
-    btn_background[51].style.backgroundColor = "red";
-    btn_background[52].style.backgroundColor = "red";
-    btn_background[55].style.backgroundColor = "red";
-    btn_background[56].style.backgroundColor = "red";
-    btn_background[57].style.backgroundColor = "red";
-    btn_background[62].style.backgroundColor = "red";
-    btn_background[63].style.backgroundColor = "red";
-    btn_background[64].style.backgroundColor = "red";
-    btn_background[65].style.backgroundColor = "red";
-    btn_background[74].style.backgroundColor = "red";
-    btn_background[84].style.backgroundColor = "red";
-    btn_background[85].style.backgroundColor = "red";
-    btn_background[86].style.backgroundColor = "red";
-    btn_background[95].style.backgroundColor = "red";
+        btn_backgroundX.forEach(function(value,index){
+        btn_background[value].style.backgroundColor = "red"
+    })
 
 
 }
