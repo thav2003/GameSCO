@@ -26,6 +26,7 @@ function resetX(){
     btn_backgroundX.forEach(function(value,index){
         btn_background[value].style.backgroundColor = "red";
     })
+    alert("reset");
 }
 function show(){
     
