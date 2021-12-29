@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+html,body {
+    font-family: "Times New Roman";
+    font-size:20px;
+    width:100%;
+    margin:0px auto;
+}
+#menu {
+    background: forestgreen;
+    height: 10vh;
+    display: flex;
+    flex-direction:row
+}
+#center {
+    width: 100vw;
+    height: 80vh;
+}
+#center #left{
+    width: 30vw;
+    background:forestgreen;
+    float:left;
+    display: flex;
+    min-height: 100%;
+}
+#center #right{
+    width: 70vw;
+    background:rgb(27, 37, 177);
+    float:left;
+    min-height: 100%;
+ 
+}
+#footer {
+    width: auto;
+    clear: left;
+    min-height: 10vh;
+    color:#FFF;
+    background:rgb(56, 55, 52);
+    text-align: center;
+    line-height :10vh; 
+}
+#de_bai{
+    height:77vh;
+    width:28vw;
+    border: 1px solid #1a07c5;
+    margin:auto;
+    background:rgb(20, 201, 233);
+}
+#de_bai img{
+    width:28vw;
+    height:77vh;
+}
+
+#center #right #top{
+    width: 100%;
+    height:70vh;
+    background:blue;
+    position: relative;
+}
+#center #right #bottom{
+    width: 100%;
+    height:10vh;
+    background:forestgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner{
+    width: 60%;
+    height:auto;
+    font-size: 50px;
+    color:#FFF;
+    background:forestgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#menu_right{
+    width:40%;
+    
+}
+#menu_right ul{
+    margin:0px;
+    padding:0px;
+    
+}
+#menu_right ul li{
+    list-style: none;
+    float:left;  
+    
+}
+#menu_right ul li a{
+    text-decoration: none;
+    display: block;
+    color:#FFF;
+    padding:0px 20px 0px 20px;
+    border-radius: 8px;
+    
+    height:10vh;
+    line-height:10vh;
+    
+}
+#menu_right ul li a:hover{
+    background:darkgreen;
+    border: 1px solid #11691f;
+    transition: all 0.4s ease-in;
+}
+#btn_submit{
+    background-color: #094201; /* Màu của Quản trị mạng ^^ */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+#btn_submit:hover{
+    background-color: crimson;
+    color: white;
+}
+#btn_submit:active {
+    transform: scale(1.25);
+}
+#btn_reset{
+    background-color: #094201; /* Màu của Quản trị mạng ^^ */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+#btn_reset:hover{
+    background-color: crimson;
+    color: white;
+}
+#btn_reset:active {
+    transform: scale(1.25);
+}
+#start{
+    background-color: transparent; /* Màu của Quản trị mạng ^^ */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 20px 5px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.5);
+}
+.timer {
+    font-size: 50px;
+    font-weight: lighter;
+    color: #fff;
+    width: 410px;
+    margin-left: 20px;
+    padding-left: 25px;;
+}
+.toggle {
+    transition: all 0.3s ease;
+    background: rgb(105,201,48);
+    background: radial-gradient(circle, rgba(105,201,48,1) 0%, rgba(48,182,40,1) 100%);
+    z-index: 1;
+}
+.toggle.on {
+    background-color: #d92027;
+}
+.toggle:active, .btns .reset:active, .btns .lap:active {
+    transform: scale(1.25);
+}
+.lapContainer {
+    width: 200px;
+    height: 10vh;
+    color: #fff;
+    padding-left: 30px;
+    overflow: auto;
+   
+ 
+}
+.lapItem {
+    width: 150px;
+    height: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    
+}
+#list{
+    height:10vh;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff9234;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff7600;
+}
+
+
+/*=======================================*/
+#man_che{
+    z-index: 1;
+    background:darkgreen;
+    width: 100%;
+    height:70vh;
+    position: absolute;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+#main_game{
+    width: 100%;
+    height:70vh;
+    background:yellow;
+    z-index: 0;
+    position: absolute;
+    visibility: hidden;
+    
+}
+#Table{
+    height: 100%;
+    text-align: center;
+    padding:0px ;
+    margin:0px;
+}
+table, th, td {
+    border:1px solid black;
+  }
+input{
+    width:100%; 
+    height:100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* Style the Image Used to Trigger the Modal */
+
+.popupImage {
+
+    border-radius: 5px;
+    
+    cursor: pointer;
+    
+    transition: 0.3s;
+    
+    }
+    .popupImage:hover {opacity: 0.7;}
+    /* The Modal (background) */
+    
+    .modal-Image {
+    
+    display: none; /* Hidden by default */
+    
+    position: fixed; /* Stay in place */
+    
+    z-index: 9999; /* Sit on top */
+    
+    padding-top: 100px; /* Location of the box */
+    
+    left: 0;
+    
+    top: 0;
+    
+    width: 100%; /* Full width */
+    
+    height: 100%; /* Full height */
+    
+    overflow: auto; /* Enable scroll if needed */
+    
+    background-color: rgb(0,0,0); /* Fallback color */
+    
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    
+    }
+    /* Modal Content (Image) */
+    
+    .modal-Image .modal-content {
+    
+    margin: auto;
+    
+    display: block;
+    
+    width: 80%;
+    
+    max-width: 700px;
+    
+    }
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+    
+    .modal-Image #caption {
+    
+    margin: auto;
+    
+    display: block;
+    
+    width: 80%;
+    
+    max-width: 700px;
+    
+    text-align: center;
+    
+    color: #ccc;
+    
+    padding: 10px 0;
+    
+    height: 150px;
+    
+    }
+    /* Add Animation - Zoom in the Modal */
+    
+    .modal-Image .modal-content, .modal-Image #caption { 
+    
+    -webkit-animation-name: zoom;
+    
+    -webkit-animation-duration: 0.6s;
+    
+    animation-name: zoom;
+    
+    animation-duration: 0.6s;
+    
+    }
+    @-webkit-keyframes zoom {
+    
+    from {-webkit-transform:scale(0)} 
+    
+    to {-webkit-transform:scale(1)}
+    
+    }
+    @keyframes zoom {
+    
+    from {transform:scale(0)} 
+    
+    to {transform:scale(1)}
+    
+    }
+    /* The Close Button */
+    
+    .modal-Image .close {
+    
+    position: absolute;
+    
+    top: 15px;
+    
+    right: 35px;
+    
+    color: #f1f1f1;
+    
+    font-size: 40px;
+    
+    font-weight: bold;
+    
+    transition: 0.3s;
+    
+    }
+    .modal-Image .close:hover,
+    
+    .modal-Image .close:focus {
+    
+    color: #bbb;
+    
+    text-decoration: none;
+    
+    cursor: pointer;
+    
+    }
+    /* 100% Image Width on Smaller Screens */
+    
+    @media only screen and (max-width: 700px){
+    
+    .modal-Image .modal-content {
+    
+    width: 100%;
+    
+    }
+    
+    } 
