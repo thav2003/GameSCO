@@ -6,7 +6,7 @@ var Dapan=new Array("The","Black","Tulip","Muscle","Davis","King's","Mania","Ele
 "Speech","Perception","Solar","Power","Rose","Trade","Management","Information","System",
 "Kennedy","Space","Center","And","Citric","Shuttle","Marketing","Communications","Acid",
 "Rain","Program","Technology","Adoption","Life","Cycle","Of","Pi","Beta","Phi","Herculis");
-var btn_backgroundX  = [0,1,2,5,9,10,12,14,15,17,18,20,21,23,24,26,28,31,32,33,36,37,38,42,45,47,51,52,55,56,57,62,63,64,65,74,84,85,86,95];
+var btn_backgroundX  = [0,1,2,5,9,10,12,14,15,17,18,20,21,23,24,26,28,31,32,33,36,37,38,42,45,47,51,52,55,56,57,62,63,64,65,74,84,85,86,95]
 
 
 Btn_play.onclick = function(){
