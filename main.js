@@ -24,7 +24,7 @@ function resetX(){
         btn_background[value].value = "";
     })
     btn_backgroundX.forEach(function(value,index){
-        btn_background[value].style.backgroundColor = "red"
+        btn_background[value].style.backgroundColor = "red";
     })
 }
 function show(){
@@ -32,7 +32,7 @@ function show(){
     document.getElementById('main_game').style.visibility='visible';
     document.getElementById('man_che').style.visibility='hidden';
         btn_backgroundX.forEach(function(value,index){
-        btn_background[value].style.backgroundColor = "red"
+        btn_background[value].style.backgroundColor = "red";
     })
 
 
